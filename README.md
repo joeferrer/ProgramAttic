@@ -1,5 +1,5 @@
-#ProgramAttic
----
+#ProgramAttic#
+<br>
 ##About
 ProgramAttic is another passion-project/public repository for learning programming languages and encountering all sorts of programming problems. The inspiration behind this project comes from the fact that most of the time, school only covers theoretical stuff and applying those things are left out.
 
