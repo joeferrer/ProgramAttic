@@ -9,15 +9,8 @@ What this code does:
 	Checks whether the input of a user is a palindrome or not
 	i.e. whether the input and its reverse is equal.
 '''
-import sys
 
-#Function to get input from user
-def get_input():
-	version = sys.version_info
-	if version[0] > 2:
-		return input()
-	else:
-		return raw_input()
+from modules.user_end import get_input
 
 
 if __name__ == "__main__":

@@ -10,28 +10,9 @@ What this code does:
 	Only bases 2->16 is considered. 
 '''
 
-import sys
-from operator import add
+from modules.user_end import get_input
+from modules.math_ext import convert
 
-#Function to get input from user
-def get_input():
-	version = sys.version_info
-	if version[0] > 2:
-		return input()
-	else:
-		return raw_input()
-
-
-def convert(n,b):
-	alphx = ['A','B','C','D','E','F']
-	l = list()
-	while(n>0):
-		if((n%b)<10):
-			l.insert(0,str(n%b))
-		else:
-			l.insert(0,alphx[(n%b)%10])
-		n = n/b
-	print "base-" +str(b) + " = " + reduce(add,l)
 
 if __name__ == "__main__":
 	num = -1

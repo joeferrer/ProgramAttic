@@ -12,25 +12,8 @@ What this code does:
 	notifying that it is a bad input and the user must input a natural number.
 '''
 
-import math
-import sys
-
-def get_input():
-	version = sys.version_info
-	if version[0] > 2:
-		return input()
-	else:
-		return raw_input()
-
-def isPrime(x):
-	d = 2 
-	r = 1
-	while(d<=math.sqrt(float(x))):
-		if(x%d==0):
-			r = 0
-			break
-		d = d+1
-	return r
+from modules.user_end import get_input
+from modules.math_ext import isPrime
 
 if __name__ == "__main__":
 	num = -1
